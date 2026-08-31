@@ -203,7 +203,6 @@ invalid-token-123
 
 **PASS**
 
----
 
 # 6. Product API Testing
 
@@ -243,7 +242,6 @@ response time < 1000 ms
 
 ![Get All Products](../screenshots/05-get-products.png)
 
----
 
 ## 6.2 Get Product Detail - Valid ID
 
@@ -266,7 +264,6 @@ Verify that product details can be retrieved using a valid product ID.
 
 **PASS — 200 OK**
 
----
 
 ## 6.3 Get Product Detail - Invalid ID
 
@@ -290,7 +287,6 @@ Verify that the API returns an error when an unavailable product ID is requested
 
 **PASS**
 
----
 
 # 7. CRUD Testing
 
@@ -338,7 +334,6 @@ The returned product ID is also stored in the `productId` environment variable.
 
 ![Create Product](../screenshots/06-create-product.png)
 
----
 
 ## 7.2 Create Product - Missing Title
 
@@ -373,7 +368,6 @@ The API accepted the request even though the `title` field was omitted.
 
 This behavior is documented as a finding rather than being classified as a confirmed application defect, because the testing environment is a simulated API and no separate product validation requirement was provided.
 
----
 
 ## 7.3 Create Product - Invalid Price
 
@@ -409,7 +403,6 @@ The API accepted a non-numeric value for the `price` field.
 
 This behavior is documented as a finding rather than being classified as a confirmed application defect.
 
----
 
 ## 7.4 Update Product
 
@@ -448,7 +441,6 @@ Postman assertions validate the response status, updated title, and updated pric
 
 ![Update Product](../screenshots/07-update-product.png)
 
----
 
 ## 7.5 Delete Product
 
@@ -473,7 +465,6 @@ Verify that an existing product can be deleted.
 
 ![Delete Product](../screenshots/08-delete-product.png)
 
----
 
 # 8. Automated Assertions
 
@@ -521,7 +512,6 @@ The test cases cover:
 
 The detailed test case file is available in the `test-cases` directory.
 
----
 
 # 10. Test Execution Summary
 
@@ -548,7 +538,6 @@ The create-product endpoint accepted a string value for `price` and returned `20
 
 These findings demonstrate the use of negative testing to identify unexpected API behavior.
 
----
 
 # 12. Conclusion
 
